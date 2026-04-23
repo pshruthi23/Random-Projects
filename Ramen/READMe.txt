@@ -4,7 +4,7 @@ To make it more challenging, I went to the website and scraped the review pages 
 Overall, this mini-project felt quite rewarding. 
 I used AI as a buddy while writing most of the code myself (I used Claude AI)
 
-Method:
+###Method:
 I first imported the original dataset from Kaggle and renamed the 'Review#' column to 'Review' as I was worried that any code after the '#' would comment out (Google assured me that it would not happen, but I changed it anyways)
 I used a function for the web scraping. This is the heart and soul of the code, and I wrote most of it with help from the YouTube tutorial. I started from the search pages. Using the review numbers in the URL, I was able to find most of the reviews. Obviously, there were some variations in how the search results appear, which I handled in the atag for loop. 
 I found some reviews on page 2 of the search results. I then added the while loop for the page numbers (Thanks to Claude, who helped figure out the tweaks I needed to do)
@@ -25,11 +25,11 @@ I plotted a bar chart with that data.
 Finally, the thing that concerns me the most. Comparing ratings and the number of products, which is best for a vegetarian? I filtered out brands with only 1 product because I felt the data would be slightly biased. There was an Indian company, Patanjali, with only 1 product and a 5-star rating. Nissin came out on top, but the rating was slightly lower - a 3.6 rating for 74 products. The next highest was Nongshim, with 33 products, but a slightly higher rating - 3.79.
 This answers my question, try both!
  
-Technical Details:
+###Technical Details:
 I used the following libraries: Pandas, Requests, Beautiful Soup (bs4), and Matplotlib. Usually, as a reflex, I import the Pandas and NumPy libraries together when writing Python code – I never know when I might need them.  
 The web scraping took a good few hours to run, around 3 hours. This may be because of my computer's specifications. 
 
-Credits:
+###Credits:
 Dataset: Kaggle by Aleksey Bilogur(https://www.kaggle.com/datasets/residentmario/ramen-ratings)
 Beautiful Soup tutorial: Alex the Analyst (Link to the tutorial part 1/3: https://www.youtube.com/watch?v=bargNl2WeN4)
 Web scraped source: https://www.theramenrater.com/
