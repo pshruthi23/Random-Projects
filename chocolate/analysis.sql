@@ -1,5 +1,3 @@
-select * from `chocolate-493502.Dataset.products`
-;
 --1. sales trends over the years
 select extract(year from order_date) as year, store_id, count(distinct customer_id) as total_customers, sum(quantity) as units_sold, trunc(sum(profit),2) as total_profit
 from `chocolate-493502.Dataset.sales`
